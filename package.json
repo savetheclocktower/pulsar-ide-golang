@@ -32,6 +32,11 @@
       "versions": {
         "0.1.0": "consumeDatatip"
       }
+    },
+    "signature-help": {
+      "versions": {
+        "0.1.0": "consumeSignatureHelp"
+      }
     }
   },
   "providedServices": {
@@ -94,6 +99,6 @@
     }
   },
   "dependencies": {
-    "@savetheclocktower/atom-languageclient": "^1.17.7"
+    "@savetheclocktower/atom-languageclient": "^1.17.9"
   }
 }
