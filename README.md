@@ -17,6 +17,24 @@ If `gopls` is not present in your path:
 * Enter the full absolute path to `gopls`, with the binary name included, in the “Path to gopls” setting on this package’s configuration page.
 * Reload the window (**Window: Reload** from the command palette) or quit and relaunch Pulsar.
 
+### “Finished loading packages” notification
+
+You might notice a notification like this on startup:
+
+![gopls-finished-loading-packages](https://gist.github.com/assets/3450/c66fe9a6-2e2a-4d1f-9fcc-0058893d6d77)
+
+`gopls` wants to report its progress on some server-side–initiated tasks like workspace setup. The output of this progress will use the `busy-signal` package if you have it installed. If you don’t have `busy-signal` installed, `gopls` gracefully degrades and sends those messages a different way: as notifications.
+
+Hence there are two ways out of seeing this notification on every startup:
+
+1. Install `busy-signal`. The version in Pulsar’s package registry is out of date, so you are encouraged to install it directly from GitHub:
+
+    ```
+    ppm install steelbrain/busy-signal
+    ```
+
+2. If, for whatever reason, you don’t want to install `busy-signal`, you can instead enable this package’s **Hide “Package Loading” Messages** setting.
+
 
 ## What does it do?
 

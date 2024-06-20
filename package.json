@@ -37,6 +37,11 @@
       "versions": {
         "0.1.0": "consumeSignatureHelp"
       }
+    },
+    "atom-ide-busy-signal": {
+      "versions": {
+        "0.1.0": "consumeBusySignal"
+      }
     }
   },
   "providedServices": {
@@ -99,6 +104,6 @@
     }
   },
   "dependencies": {
-    "@savetheclocktower/atom-languageclient": "^1.17.9"
+    "@savetheclocktower/atom-languageclient": "^1.17.10"
   }
 }
