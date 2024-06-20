@@ -21,7 +21,8 @@ If `gopls` is not present in your path:
 
 You might notice a notification like this on startup:
 
-![gopls-finished-loading-packages](https://gist.github.com/assets/3450/c66fe9a6-2e2a-4d1f-9fcc-0058893d6d77)
+![gopls-finished-loading-packages](https://github.com/savetheclocktower/pulsar-ide-golang/assets/3450/eab3e8dc-d239-4cae-89bc-89774eacb2ab)
+
 
 `gopls` wants to report its progress on some server-side–initiated tasks like workspace setup. The output of this progress will use the `busy-signal` package if you have it installed. If you don’t have `busy-signal` installed, `gopls` gracefully degrades and sends those messages a different way: as notifications.
 
