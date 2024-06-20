@@ -1,7 +1,7 @@
 {
   "name": "pulsar-ide-golang",
   "main": "./lib/main",
-  "version": "0.0.2",
+  "version": "0.0.3",
   "description": "Go language support via the gopls language server",
   "keywords": [
     "lsp",
